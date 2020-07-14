@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,480" mininfo="60,60" titile="便笺" gdiplustext="true" bktrans="true" defaultfontcolor="#FFFFFFFF" sizebox="4,4,4,4" roundcorner="0,0" caption="0,0,0,-1">
+	<Font name="微软雅黑" size="15" bold="false" italic="false" default="true"/>
+	<Include source="Default.xml"/>
+	<VerticalLayout name="vlyt_Main" bkcolor="#FF1E1E1E">
+        <HorizontalLayout height="33">
+			<Label text="便笺" align="center" font="font14" textcolor="#FFFFFFFF" autocalcwidth="false">
+				<HorizontalLayout>
+					<HorizontalLayout/>
+					<Button name="btn_MinSize" hotbkcolor="#51FFFFFF" foreimage="min.png" width="48"/>
+					<Button name="btn_Hide" hotbkcolor="#FFFF0000" foreimage="close.png" width="48"/>
+				</HorizontalLayout>
+			</Label>
+        </HorizontalLayout>
+		<VerticalLayout bkcolor="#FF26436d" height="1" padding="0,0,0,5"/>
+		<HorizontalLayout height="36" inset="3,3,3,3">
+			<HorizontalLayout/>
+			<Button name="btn_Add" text="添加" width="90" bordersize="1"/>
+		</HorizontalLayout>
+		<List name="lst_Memos" vscrollbar="true" hscrollbar="true" itemselectedbkcolor="#33C1E3FF" itemhotbkcolor="#22E9F5FF" itembkcolor="#00FFFFFF" header="hidden" inset="3,3,3,3"/>
+		<HorizontalLayout height="30">
+			<CheckBox name="chk_StartOnBoot" text="开机启动" height="30" selectedbkcolor="#3300FF00"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

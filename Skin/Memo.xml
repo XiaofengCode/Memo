@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="320,197" mininfo="60,60" titile="Memo" gdiplustext="true" bktrans="true" defaultfontcolor="#FFFFFFFF" sizebox="4,4,4,4" roundcorner="0,0" caption="0,0,0,-1">
+	<Font name="微软雅黑" size="15" bold="false" italic="false" default="true"/>
+	<Include source="Default.xml"/>
+	<Default name="Combo" value="textpadding='5,0,0,0' bordercolor='#FFD4D7D6' bordersize='1' height='26' textcolor='#FFFFFFFF' itemtextcolor='#FFFFFFFF' itemselectedtextcolor='#FFFFFFFF' itembkcolor='#AA000000' itemselectedbkcolor='#BB000000' itemhotbkcolor='#BB000000' itemhottextcolor='#FFFFFFFF' normalimage=&quot;file='arrowdown_normal.png' dest='-0,0,28,26'&quot; hotimage=&quot;file='arrowdown_hover.png' dest='-0,0,28,26'&quot; pushedimage=&quot;file='arrowdown_down.png' dest='-0,0,28,26'&quot; focusedimage=&quot;file='arrowdown_normal.png' dest='-0,0,28,26'&quot; dropboxsize='0,150'"/>
+	<VerticalLayout name="vlyt_Main" bkcolor="#AA000000">
+		<HorizontalLayout height="30" bkcolor="#11000000">
+			<Label name="lbl_Alarm" autocalcwidth="false" align="right"/>
+			<Button name="btn_Alarm" text="♫" width="30" height="30" tooltip="设置提醒"/>
+			<Button name="btn_Add" text="＋" width="30" height="30" tooltip="新建便笺"/>
+			<Button name="btn_Hide" text="﹣" width="30" height="30" tooltip="隐藏当前窗口"/>
+			<Button name="btn_Delete" text="×" width="30" height="30" tooltip="删除当前便笺"/>
+		</HorizontalLayout>
+		<VerticalLayout>
+			<RichEdit name="redit_Content" inset="3,1,3,1" textcolor="#FFFFFFFF" rich="false" vscrollbar="true" autovscroll="true"/>
+			<HorizontalLayout name="hlyt_Remind" visible="true" height="30" bkcolor="#220000FF">
+				<Button name="btn_DelayRemind" text="下次提醒" tooltip="10分钟后提醒"/>
+				<Button name="btn_Tomorrow" text="明天提醒" tooltip="明天同一时间提醒"/>
+				<Button name="btn_EveryDay" text="每天提醒" tooltip="每天同一时间提醒"/>
+				<Button name="btn_NoRemind" text="不在提醒"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>
